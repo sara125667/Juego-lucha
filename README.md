@@ -1,29 +1,33 @@
 # ⚔️ Juego de Pelea en Java
 
-Este proyecto es un juego en Java donde dos personajes se enfrentan en un combate automático por turnos hasta que uno pierde toda su vida.
+Este proyecto consiste en un simulador de combate por turnos desarrollado en Java, donde dos personajes (Thor y Loki) se enfrentan en una batalla hasta que uno de los dos pierde toda su vida (HP).
+
+El objetivo del programa es aplicar conceptos básicos de programación como variables, ciclos, condicionales y manejo de objetos, simulando una mecánica sencilla de videojuego
+
+# Funcionamiento del juego
+El juego inicia con dos personajes:
+Thor
+Loki
+Ambos comienzan con una cantidad de vida inicial (HP).
+En cada turno:
+Thor ataca a Loki y le causa daño.
+Loki ataca a Thor y le causa daño.
+El daño se aplica de forma progresiva en cada ronda.
+El juego continúa hasta que la vida de uno de los personajes llegue a 0 o menos.
+Finalmente, se muestra el ganador.
 
 
-
-##  Descripción
-
-El juego simula una batalla entre dos personajes (por ejemplo Thor y Loki), mostrando el daño que se hacen en cada turno hasta determinar un ganador.
-
+# Tecnologías utilizadas
+Java (JDK 8 o superior)
+NetBeans / IntelliJ IDEA / Visual Studio Codea
 
 
-##  Lógica del juego
-
-- Cada personaje tiene puntos de vida (HP)
-- Los ataques reducen la vida del oponente
-- El combate continúa hasta que un personaje llega a 0 HP
-- Todo se muestra en consola
-
-
-
-#  Tecnologías usadas
-
-- Java
-- Programación orientada a objetos (POO)
-- Consola
+# Conceptos aplicados
+Variables y tipos de datos
+Estructuras condicionales (if, else)
+Ciclos (while)
+Programación estructurada
+Simulación de lógica de videojuegos
 
 
 
@@ -35,6 +39,13 @@ El juego simula una batalla entre dos personajes (por ejemplo Thor y Loki), most
 
 
 
-## 📄 Licencia
+# Durante la ejecución se mostrarán mensajes como
+
+Thor ataca a Loki causando 27 puntos de daño.
+Loki tiene 73 HP
+Loki ataca a Thor causando 22 puntos de daño.
+Thor tiene 78 HP
+
+Al final, el programa mostrará el ganador del combate.
 
 Proyecto académico de uso educativo.
