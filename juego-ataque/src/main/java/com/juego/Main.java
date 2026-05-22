@@ -1,28 +1,35 @@
 package com.juego;
 
-import com.juego.factory.FabricaPersonajes;
-import com.juego.juego.JuegoLucha;
-import com.juego.model.Personaje;
-
 public class Main {
-
     public static void main(String[] args) {
 
-        Personaje jugador1 =
-                FabricaPersonajes.crearPersonaje(
-                        "guerrero",
-                        "Thor"
-                );
+        int vidaThor = 100;
+        int vidaLoki = 100;
 
-        Personaje jugador2 =
-                FabricaPersonajes.crearPersonaje(
-                        "mago",
-                        "Loki"
-                );
+        System.out.println("Estado inicial:");
+        System.out.println("Thor tiene " + vidaThor + " HP");
+        System.out.println("Loki tiene " + vidaLoki + " HP");
 
-        JuegoLucha juego =
-                new JuegoLucha(jugador1, jugador2);
+        while (vidaThor > 0 && vidaLoki > 0) {
 
-        juego.iniciarPelea();
+            vidaLoki -= 10;
+            vidaThor -= 8;
+
+            System.out.println("Thor ataca a Loki");
+            System.out.println("Vida Loki: " + vidaLoki);
+
+            System.out.println("Loki ataca a Thor");
+            System.out.println("Vida Thor: " + vidaThor);
+
+            System.out.println("-------------------");
+        }
+
+        if (vidaThor <= 0 && vidaLoki <= 0) {
+            System.out.println("Empate");
+        } else if (vidaThor > vidaLoki) {
+            System.out.println("Gana Thor ⚡");
+        } else {
+            System.out.println("Gana Loki 🐍");
+        }
     }
 }
